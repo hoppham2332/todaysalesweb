@@ -10,6 +10,7 @@ from path import Path
 daystr = datetime.date.today().strftime('%Y%m%d')
 filename = 'deals_'+daystr+'.jl'
 rootFolder = 'C:\crawlData\\'
+"""Remove last raw data file """
 oldFiles = Path(rootFolder).files('*.jl')
 oldFiles[0].remove()
 print('Removed {} file').format(oldFiles[0])
